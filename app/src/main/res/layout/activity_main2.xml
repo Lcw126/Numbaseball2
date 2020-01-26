@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd3"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:paddingBottom="20dp"
+    android:id="@+id/main2layoutback"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/visiblelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/throwcount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="B"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/b1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ballstrikebase"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/b2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ballstrikebase"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/b3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ballstrikebase"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="S"
+                    android:textColor="#ffffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/s1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ballstrikebase"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/s2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ballstrikebase"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/s3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ballstrikebase"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<!-- 제일 윗줄 전체 레이아웃-->
+
+    <LinearLayout
+        android:id="@+id/visiblelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:layout_weight="6">
+
+        <TextView
+            android:id="@+id/tvfinish"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="120dp"
+
+                android:weightSum="3"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/firstball"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/balllocation"/>
+                <TextView
+                    android:id="@+id/secondball"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/balllocation"/>
+                <TextView
+                    android:id="@+id/thridball"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/balllocation"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+<!-- 가운데 영역 레이아웃-->
+
+
+    <LinearLayout
+        android:id="@+id/visiblelayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/ball0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ball0"
+                    android:tag="0"
+                    android:onClick="textnum"/>
+                <ImageView
+                    android:id="@+id/ball1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="1"
+                    android:src="@drawable/ball1"
+                    android:onClick="textnum"/>
+                <ImageView
+                    android:id="@+id/ball2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="2"
+                    android:src="@drawable/ball2"
+                    android:onClick="textnum"/>
+                <ImageView
+                    android:id="@+id/ball3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="3"
+                    android:src="@drawable/ball3"
+                    android:onClick="textnum"/>
+                <ImageView
+                    android:id="@+id/ball4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="4"
+                    android:src="@drawable/ball4"
+                    android:onClick="textnum"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/ball5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="5"
+                    android:src="@drawable/ball5"
+                    android:onClick="textnum"/>
+                <ImageView
+                    android:id="@+id/ball6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="6"
+                    android:src="@drawable/ball6"
+                    android:onClick="textnum"/>
+                <ImageView
+                    android:id="@+id/ball7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="7"
+                    android:src="@drawable/ball7"
+                    android:onClick="textnum"/>
+                <ImageView
+                    android:id="@+id/ball8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="8"
+                    android:src="@drawable/ball8"
+                    android:onClick="textnum"/>
+                <ImageView
+                    android:id="@+id/ball9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="9"
+                    android:src="@drawable/ball9"
+                    android:onClick="textnum"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:weightSum="2"
+           android:layout_weight="1">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:src="@drawable/throwball"
+               android:onClick="pitch"/>
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:src="@drawable/eball"
+               android:onClick="erase"/>
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
